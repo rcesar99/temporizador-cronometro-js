@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronômetro / Temporizador</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #ffeba2;
+    }
+
+    .container {
+      text-align: center;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(125, 255, 113, 0.7);
+    }
+
+    .display {
+      font-size: 2em;
+      margin: 20px 0;
+    }
+
+    button {
+      border-style: inset;
+      font-size: 1em;
+      margin: 5px;
+      padding: 5px 10px;
+    }
+
+    input {
+      font-size: 1em;
+      width: 50px;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <div class="container">
+    <h2>Cronômetro / Temporizador</h2>
+    <div class="display" id="display">00:00</div>
+    <div>
+      <button id="startBtn">Iniciar</button>
+      <button id="pauseBtn">Pausar</button>
+      <button id="resetBtn">Resetar</button>
+    </div>
+    <div style="margin-top: 20px;">
+      <label for="timerInput">Definir temporizador (segundos):</label>
+      <input type="number" id="timerInput" min="1" value="60">
+      <button id="setTimerBtn">Definir</button>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
